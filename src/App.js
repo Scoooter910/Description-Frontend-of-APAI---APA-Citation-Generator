@@ -74,7 +74,7 @@ function App() {
     setResults([]);
 
     try {
-      const response = await fetch('http://localhost:5000/api/cite-topic', {
+      const response = await fetch('https://apai-backend-server.onrender.com/api/cite-topic', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ topic: topicInput })
